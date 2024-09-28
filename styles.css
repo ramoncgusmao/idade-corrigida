@@ -29,6 +29,19 @@ h1 {
 
 .form-group {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#gestationalWeeks,
+#gestationalDays {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.inline-inputs {
+    display: flex;
+    gap: 10px;
 }
 
 label {
@@ -60,6 +73,12 @@ button:hover {
 }
 
 #result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#result-1 {
     margin-top: 20px;
     font-size: 1.2rem;
     color: #333;

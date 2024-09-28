@@ -15,12 +15,11 @@
                 <input type="date" id="birthDate" required>
             </div>
             <div class="form-group">
-                <label for="gestationalWeeks">Semanas Gestacionais no Nascimento:</label>
-                <input type="number" id="gestationalWeeks" min="0" max="40" required>
-            </div>
-            <div class="form-group">
-                <label for="gestationalDays">Dias Gestacionais no Nascimento:</label>
-                <input type="number" id="gestationalDays" min="0" max="6" required>
+                <label for="gestationalWeeksLabel">Semanas Gestacionais no Nascimento:</label>
+                <div class="inline-inputs">
+                    <input type="number" id="gestationalWeeks" min="0" max="40" placeholder="Semanas" required>
+                    <input type="number" id="gestationalDays" min="0" max="6" placeholder="Dias" required>
+                </div>
             </div>
             <div class="form-group">
                 <label for="currentDate">Data Atual:</label>
@@ -28,8 +27,12 @@
             </div>
             <button type="submit">Calcular Idade Corrigida</button>
         </form>
+        <div id="result-1"></div>
         <div id="result"></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@4.1.0/cdn.min.js"></script>
+    
+    <!-- Seu script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
